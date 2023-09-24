@@ -11,7 +11,7 @@ Progress.value=Song.currentTime
 
 
 
-function playpause(){
+Ctrlicon.addEventListener('click',function playpause(){
 
 if(Ctrlicon.classList.contains('fa-pause')){
 
@@ -25,7 +25,7 @@ Ctrlicon.classList.add('fa-pause');
 Ctrlicon.classList.remove('fa-play');
 
 }
-}
+})
 
 if(Song.play()){
 setInterval(()=>{
