@@ -7,12 +7,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <div
-      class="Container h-[100vh] w-full bg-black flex flex-wrap justify-center items-center"
-    >
+    <div class="container">
       <div class="h-full px-8 py-6 bg-red-100 music-player w-96">
         <nav class="flex justify-between mb-8">
           <div
@@ -45,7 +43,9 @@
         />
 
         <div class="flex items-center justify-center space-x-16 controls">
-          <div class="relative h-12 leading-10 text-center bg-white rounded-full cursor-pointer circle1 w-14 shadow-custom">
+          <div
+            class="relative h-12 leading-10 text-center bg-white rounded-full cursor-pointer circle1 w-14 shadow-custom"
+          >
             <i class="absolute text-xl fa-solid fa-backward top-3.5 left-4"></i>
           </div>
 
@@ -53,7 +53,9 @@
             class="relative h-12 leading-10 bg-white rounded-full cursor-pointer circle1 w-14 shadow-custom"
             onclick="playpause()"
           >
-            <i class="absolute text-xl fa-solid fa-play top-3.5 left-5" id="ctrlicon"
+            <i
+              class="absolute text-xl fa-solid fa-play top-3.5 left-5"
+              id="ctrlicon"
             ></i>
           </div>
 

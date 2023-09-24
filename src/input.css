@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
-
-
-
+.container {
+  @apply h-[100vh] w-full bg-black flex flex-wrap justify-center items-center;
+}
