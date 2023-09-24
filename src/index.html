@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="Container h-[100vh] w-full bg-black flex flex-wrap justify-center items-center"
+    >
+      <div class="h-full px-8 py-6 bg-red-100 music-player w-96">
+        <nav class="flex justify-between mb-8">
+          <div
+            class="bg-white w-10 h-10 rounded-full leading-10 pl-3.5 shadow-custom"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div
+            class="circle bg-white w-10 h-10 rounded-full leading-10 pl-3.5 shadow-custom"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          src="/arjit sing img 1.jpg"
+          alt=""
+          class="border-8 border-white border-solid rounded-full song-img w-80"
+        />
+        <div class="mt-2 text-center">
+          <h1 class="mb-1 text-xl font-medium">Arijit sing</h1>
+          <p>Apna bana le</p>
+        </div>
+        <audio id="song">
+          <source src="/Apna bna le song.mpeg" type="" />
+        </audio>
+        <input
+          type="range"
+          id="progress"
+          class="w-full h-2 bg-pink-500 rounded-md appearance-none cursor-pointer my-9"
+        />
+
+        <div class="flex items-center justify-center space-x-16 controls">
+          <div class="relative h-12 leading-10 text-center bg-white rounded-full cursor-pointer circle1 w-14 shadow-custom">
+            <i class="absolute text-xl fa-solid fa-backward top-3.5 left-4"></i>
+          </div>
+
+          <div
+            class="relative h-12 leading-10 bg-white rounded-full cursor-pointer circle1 w-14 shadow-custom"
+            onclick="playpause()"
+          >
+            <i class="absolute text-xl fa-solid fa-play top-3.5 left-5" id="ctrlicon"
+            ></i>
+          </div>
+
+          <div
+            class="relative h-12 leading-10 bg-white rounded-full cursor-pointer circle1 w-14 shadow-custom"
+          >
+            <i class="absolute text-xl fa-solid fa-forward top-3.5 left-5"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
